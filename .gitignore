@@ -1,0 +1,14 @@
+*~*
+.idea
+*.DS_Store
+*.zip
+venv/
+a.txt
+__pycache__
+.env
+*combined*
+*.log
+*.pdf
+*mpt*.txt
+final_export/
+final_presentation/
