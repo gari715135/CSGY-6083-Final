@@ -1,0 +1,80 @@
+mkdir -p ./{app,app/templates,app/static,app/utils,db}
+touch ./app/{__init__.py,models.py,views.py,forms.py}
+touch ./app/templates/{base.html,register.html,login.html,index.html,show_movies.html,show_showtimes.html,select_seats.html,purchase_tickets.html}
+touch ./app/static/{style.css,script.js}
+touch ./app/utils/{__init__.py,security.py}
+touch ./db/{__init__.py,database_setup.sql}
+
+
+
+mkdir frontend
+cd frontend
+mkdir templates static
+touch app.py
+touch database.py
+mkdir static/css static/js
+touch static/css/style.css
+touch static/js/script.js
+touch templates/layout.html
+touch templates/index.html
+touch templates/login.html
+touch templates/register.html
+touch templates/movies.html
+touch templates/showtimes.html
+touch templates/seats.html
+touch templates/purchase.html
+
+
+mkdir -p frontend/db frontend/templates frontend/static/css frontend/static/js frontend/util
+touch frontend/db/__init__.py frontend/db/database_config.py frontend/db/models.py
+touch frontend/templates/layout.html frontend/templates/login.html frontend/templates/register.html frontend/templates/movies_list.html frontend/templates/showtimes.html frontend/templates/seats_selection.html frontend/templates/purchase_confirmation.html
+touch frontend/static/css/main.css frontend/static/js/main.js
+touch frontend/util/__init__.py frontend/util/security.py frontend/util/session.py
+touch frontend/app.py frontend/requirements.txt
+
+
+mkdir -p movie_ticket_sales/app/{db,auth,movies,tickets/templates,static/css,static/js,static/images} movie_ticket_sales/tests
+touch movie_ticket_sales/app/__init__.py movie_ticket_sales/app/main.py movie_ticket_sales/app/config.py
+touch movie_ticket_sales/app/db/__init__.py movie_ticket_sales/app/db/database.py movie_ticket_sales/app/db/models.py
+touch movie_ticket_sales/app/auth/__init__.py movie_ticket_sales/app/auth/login.py movie_ticket_sales/app/auth/register.py
+touch movie_ticket_sales/app/movies/__init__.py movie_ticket_sales/app/movies/views.py
+touch movie_ticket_sales/app/tickets/__init__.py movie_ticket_sales/app/tickets/purchase.py movie_ticket_sales/app/tickets/seats.py
+touch movie_ticket_sales/app/templates/{layout.html,login.html,register.html,movies_list.html,showtimes.html,seat_selection.html,purchase_confirmation.html}
+touch movie_ticket_sales/tests/__init__.py movie_ticket_sales/tests/test_db.py movie_ticket_sales/tests/test_views.py
+touch movie_ticket_sales/requirements.txt movie_ticket_sales/.env movie_ticket_sales/README.md
+
+mkdir -p movie_ticket_sales/{db,models,utils,views}
+touch movie_ticket_sales/db/database.py
+touch movie_ticket_sales/models/{user.py,customer.py,movie.py,screen_type.py,screen.py,seat.py,showtime.py,ticket.py,sale.py}
+touch movie_ticket_sales/utils/{security.py,session.py}
+touch movie_ticket_sales/views/{authentication.py,movies.py,tickets.py}
+touch movie_ticket_sales/main.py
+
+
+cinema_ticket_sales/
+│
+├── app.py                  # Main application file with Flask routes
+├── config.py               # Configuration settings for the application
+├── requirements.txt        # List of package dependencies
+│
+├── templates/              # HTML templates for the frontend
+│   ├── layout.html         # Base layout
+│   ├── login.html          # Login page
+│   ├── register.html       # Registration page
+│   ├── movies.html         # Movie listing
+│   ├── showtimes.html      # Showtimes for a movie
+│   └── purchase_ticket.html # Ticket purchase interface
+│
+├── static/                 # CSS and JavaScript files
+│   ├── css/
+│   │   └── main.css        # Main stylesheet
+│   └── js/
+│       └── script.js       # JavaScript scripts
+│
+├── models.py               # Defines database models
+├── forms.py                # Defines Flask-WTForms for forms
+└── utils/
+    ├── db_utils.py         # Database utility functions for operations
+    └── auth_utils.py       # Authentication and authorization utilities
+
+layout.html,login.html,register.html,movies.html,showtimes.html,purchase_ticket.html

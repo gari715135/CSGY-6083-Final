@@ -1,0 +1,39 @@
+Tables
+1. Users: Stores user credentials and roles (either 'customer' or 'admin'). 
+    * Fields: user_id, username, password, and role.
+2. Customers: Links to the Users table for customer-specific information
+    * Fields: customer_id, user_id, name, email, and phone_number.
+3. Movies: Contains movie details
+    * Fields: movie_id, title, director, runtime, and rating.
+4. ScreenTypes: Defines types of screens in the cinema
+    * Fields: screen_type_id and screen_name.
+5. Screens: Details about individual cinema screens.
+    * Fields: screen_id, screen_type_id, and capacity.
+6. Showtimes: Lists movie showtimes
+    * Fields: showtime_id, movie_id, screen_id, and the showtime.
+7. Seats: Tracks seating within screens
+    * Fields: seat_id, screen_id, seat_number, and seat_status.
+8. Tickets: Records ticket purchases, linking to showtime_id, seat_id, customer_id, and includes a purchase_time.
+9. Sales: Represents sales transactions with sale_id, ticket_id, sale_amount, and sale_time.
+
+Views
+1. availableseats: Shows available seats for each showtime.
+2. currentmovieschedule: Lists the current movie schedule with titles, showtimes, screen.
+3. salessummarybymovie: Sumary of ticket sales and total sales revenue by movie title.
+
+Procedures
+1. BuyTicket: Facilitates ticket purchases by updating ticket and seat information.
+2. CancelTicket: Allows for the cancellation of a ticket and updates the seat status accordingly.
+3. CheckSeatAvailability: Checks for available seats for a given showtime.
+4. GenerateSeatsForScreen: Generates seat records based on screen capacity.
+
+Functions
+1. IsShowtimeSoldOut: Determines if a showtime has sold out of tickets.
+2. TicketsSoldForShowtime: Counts how many tickets have been sold for a particular showtime.
+3. TotalSalesForMovie: Calculates the total sales for a given movie.
+
+Triggers
+1. PreventSoldOutSales: Prevents ticket sales for sold-out showtimes.
+2. RestrictLatePurchases: Blocks ticket purchases made too late after a showtime has started.
+3. UpdateSalesAfterCancellation: Removes corresponding sales records when a ticket is canceled.
+4. UpdateSalesAfterPurchase: Automatically creates a sales record upon the purchase of a ticket.

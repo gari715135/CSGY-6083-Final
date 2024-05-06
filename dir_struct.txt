@@ -1,0 +1,48 @@
+Final Project
+|-- ticket-app
+|   |-- README.MD
+|   |-- app.py
+|   |-- components
+|   |   |-- __init__.py
+|   |   |-- analytics.py
+|   |   |-- ticket_management.py
+|   |-- database
+|   |   |-- __init__.py
+|   |   |-- db_connector.py
+|   |   |-- insert_initial_data.py
+|   |   |-- movies_data_final.csv
+|   |   |-- queries.py
+|   |   |-- sql_queries
+|   |       |-- moviePopularity.sql
+|   |       |-- queries.sql
+|   |       |-- screenUtilization.sql
+|   |-- movies_data_final.csv
+|   |-- requirements.txt
+|   |-- scrap
+|   |   |-- directory_structure.txt
+|   |   |-- dumpScripts.py
+|   |   |-- dump_dir_struct.py
+|   |   |-- movies_data.csv
+|   |-- sql_queries
+|       |-- moviePopularity.sql
+|       |-- saleTrendsOverTime.sql
+|       |-- salesSummaryByMovie.sql
+|       |-- screenTypeSales.sql
+|       |-- screenUtilization.sql
+|-- ticket-database
+    |-- README.md
+    |-- db_submissions
+    |   |-- db_details.txt
+    |   |-- db_writeup.docx
+    |-- sql_scripts
+        |-- backups
+        |   |-- movie_db_DDL.sql
+        |   |-- ticket-db-script.sql
+        |-- modular_scripts
+        |   |-- create_procedures.sql
+        |   |-- create_tables.sql
+        |   |-- create_triggers.sql
+        |   |-- create_views.sql
+        |   |-- define_functions.sql
+        |   |-- insert_init_data.sql
+        |-- ticketingDB.sql

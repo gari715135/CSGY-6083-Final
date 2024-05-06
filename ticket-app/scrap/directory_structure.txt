@@ -1,0 +1,91 @@
+Directory: ../
+	.DS_Store
+	requirements.txt
+	README.MD
+	.env
+	app.py
+	all_scripts_combined.txt
+	app.log
+
+Directory: ../database
+	db_connector.py
+	__init__.py
+	queries.py
+
+Directory: ../database/sql_queries
+	moviePopularity.sql
+	screenUtilization.sql
+	queries.sql
+
+Directory: ../database/__pycache__
+	db_connector.cpython-312.pyc
+	queries.cpython-312.pyc
+	__init__.cpython-312.pyc
+
+Directory: ../sql_queries
+	saleTrendsOverTime.sql
+	moviePopularity.sql
+	screenTypeSales.sql
+	screenUtilization.sql
+	salesSummaryByMovie.sql
+
+Directory: ../__pycache__
+	app.cpython-312.pyc
+
+Directory: ../components
+	__init__.py
+	ticket_management.py
+	analytics.py
+
+Directory: ../components/__pycache__
+	ticket_management.cpython-312.pyc
+	analytics.cpython-312.pyc
+	__init__.cpython-312.pyc
+
+Directory: ../scrap
+	inodberr.json.xml
+	all_scripts_combined2.txt
+	dump_dir_struct.py
+	directory_structure.txt
+	movies_data.csv
+	dumpScripts.py
+	all_scripts_combined.txt
+	app.log
+
+Directory: ../initial_data
+	insert_initial_data.py
+	movies_data_final.csv
+
+Directory: ../.idea
+	dataSources.xml
+	sqldialects.xml
+	dataSources.local.xml
+	vcs.xml
+	.gitignore
+	movie_ticket_sales.iml
+	ticket-app.iml
+	workspace.xml
+	modules.xml
+	misc.xml
+
+Directory: ../.idea/dataSources
+	0074b138-8a28-4f64-bcdd-e029636e6801.xml
+
+Directory: ../.idea/dataSources/0074b138-8a28-4f64-bcdd-e029636e6801
+
+Directory: ../.idea/dataSources/0074b138-8a28-4f64-bcdd-e029636e6801/storage_v2
+
+Directory: ../.idea/dataSources/0074b138-8a28-4f64-bcdd-e029636e6801/storage_v2/_src_
+
+Directory: ../.idea/dataSources/0074b138-8a28-4f64-bcdd-e029636e6801/storage_v2/_src_/schema
+	information_schema.FNRwLQ.meta
+	performance_schema.kIw0nw.meta
+	sys.zb4BAA.meta
+	movie_ticket_sales.yPY0uw.zip
+	movie_ticket_sales.yPY0uw.meta
+	mysql.osA4Bg.meta
+
+Directory: ../.idea/inspectionProfiles
+	profiles_settings.xml
+	Project_Default.xml
+
